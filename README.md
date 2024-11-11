@@ -1,2 +1,75 @@
 # M2_SO
-Trabalho referente a M2 de Sistemas Operacionais com o professor Felipe Viel
+
+Análise de Page Faults em Sistemas Operacionais
+Este projeto foi desenvolvido como parte da M2 na disciplina de Sistemas Operacionais no quinto período de Ciência da Computação, ministrada pelo professor Felipe Viel. O objetivo é aplicar e analisar o conceito de page faults em sistemas operacionais de propósito geral, como Windows e Linux, utilizando códigos em Python e C++ para realizar testes e observações de desempenho. O relatório e os códigos fornecem uma visão detalhada sobre o impacto de minor faults e major faults na paginação de memória.
+
+Conteúdo do Repositório
+servidor.py: Código do servidor em Python para monitoramento e simulação de demandas de memória.
+cliente_num.py e cliente_str.py: Clientes que enviam requisições de número e string, respectivamente, para o servidor.
+memory_test.cpp: Código em C++ para análise comparativa de desempenho em relação ao código em Python.
+testememoria.py: Código em Python para gerar alta demanda de memória e comparar resultados com o código equivalente em C++.
+README.md: Este documento explicativo, contendo detalhes do projeto, requisitos e estrutura de análise.
+Estrutura do Projeto e Requisitos
+O projeto foca na análise de page faults em sistemas operacionais e inclui os seguintes requisitos:
+
+Identificação do autor e do trabalho: Informações básicas sobre o autor e o propósito do projeto.
+Enunciado do Projeto: Análise de page faults em sistemas operacionais, visando identificar e otimizar a alocação de memória.
+Explicação e Contexto: Avaliação de page faults para identificar e analisar o desempenho de sistemas e aplicações, além de entender o comportamento de memória de cada sistema operacional.
+Resultados das Simulações: Dados e observações obtidos durante os testes de desempenho, especialmente para minor faults e major faults.
+Códigos e Implementação: Códigos relevantes para o projeto, tanto em Python quanto em C++.
+Análise de Resultados: Tabelas e gráficos que comparam o desempenho de diferentes configurações de memória e threads.
+Comparação Multiplataforma: Testes realizados tanto no Windows quanto no Linux, com diferentes configurações de carga.
+Descrição do Projeto
+Este trabalho analisa o comportamento de page faults ao realizar simulações com diferentes alocações de memória e configurações de threads. O projeto permite observar como sistemas operacionais lidam com a alocação de memória sob carga pesada, fornecendo insights sobre o impacto de minor faults e major faults no desempenho.
+
+As etapas do projeto incluem:
+
+Códigos de Teste de Alocação de Memória: Avaliação de diferentes tamanhos de alocação para observar como variáveis de memória e threads afetam o uso de page faults.
+Aumento de Threads: Utilização do trabalho da M1 para simular múltiplas threads e observar o aumento na demanda por páginas em memória.
+Software Multiplataforma: Escolha de um software desenvolvido em Python e C++ para comparar o desempenho em Linux e Windows.
+Monitores de Desempenho: Uso de ferramentas como Process Explorer no Windows e comandos como ps, top, e htop no Linux para observar o impacto da carga de memória.
+Ferramentas de Análise
+Para obter métricas precisas sobre page faults, foram utilizadas as seguintes ferramentas:
+
+Windows: Process Explorer para monitoramento de memória e threads.
+Linux: Comandos ps, top, htop e outras ferramentas de análise para observar page faults sob diferentes cargas de memória.
+Codespaces: Ambientes de desenvolvimento remoto com pouca memória principal, permitindo a ocorrência frequente de page faults.
+Pontuação Extra
+Para obter pontuação extra (até 1,0 ponto), foram implementados e comparados o mesmo algoritmo em duas linguagens diferentes: Python e C++. A comparação se concentra em observar o desempenho de cada linguagem sob alta demanda de memória, permitindo uma análise aprofundada de como cada linguagem e sistema operacional gerenciam a memória.
+
+Relatório
+O relatório, incluído em PDF, contém:
+
+Identificação do autor e descrição do trabalho.
+Enunciado detalhado do projeto.
+Explicação sobre o contexto e a aplicação do problema.
+Resultados das simulações e observações, com tabelas e gráficos.
+Discussão e análise dos resultados, evidenciando o impacto de diferentes configurações de memória e linguagem na ocorrência de page faults.
+Executando o Projeto
+Para rodar os códigos e realizar testes:
+
+Clone o repositório:
+
+bash
+Copiar código
+git clone <URL do repositório>
+cd <nome-do-repositório>
+Execute o servidor:
+
+bash
+Copiar código
+python3 servidor.py
+Execute os clientes:
+
+bash
+Copiar código
+python3 cliente_num.py
+python3 cliente_str.py
+Compile e execute o código em C++ para o teste de memória:
+
+bash
+Copiar código
+g++ -o memory_test memory_test.cpp -std=c++11 -pthread
+./memory_test
+Conclusão
+Este projeto fornece uma análise prática do gerenciamento de memória e page faults em sistemas operacionais, utilizando comparações entre linguagens e plataformas para observar as diferenças no desempenho. Essa análise é fundamental para entender o comportamento de sistemas sob carga pesada e a importância da otimização de memória em aplicações de alto desempenho.
