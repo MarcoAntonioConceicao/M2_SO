@@ -55,10 +55,10 @@ O relatório, incluído em PDF, contém:
 Para rodar os códigos e realizar testes:
 
 1. Clone o repositório:
-   ```bash
+ ```bash
    git clone <URL do repositório>
    cd <nome-do-repositório>
-
+ ```
 2. Execute o servidor:
   ```bash
   python3 servidor.py
