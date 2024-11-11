@@ -65,23 +65,23 @@ Para rodar os códigos e realizar testes:
    ```
 
 3. Execute os clientes:
-```bash
-python3 cliente_num.py
-python3 cliente_str.py
-```
+ ```bash
+ python3 cliente_num.py
+ python3 cliente_str.py
+ ```
 
 4. Compile e execute o código em C++ para o teste de memória:
-```bash
-g++ -o memory_test memory_test.cpp -std=c++11 -pthread
-./memory_test
-```
+ ```bash
+ g++ -o memory_test memory_test.cpp -std=c++11 -pthread
+ ./memory_test
+ ```
 
 5. Use códigos para analisar o desempenho
-```bash
-htop
-top
-watch -n 1 "ps -o min_flt,maj_flt -p <PID>
-```
+ ```bash
+ htop
+ top
+ watch -n 1 "ps -o min_flt,maj_flt -p <PID>
+ ```
 
 
 
