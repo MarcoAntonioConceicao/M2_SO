@@ -1,3 +1,8 @@
+# cd(caminho)
+# python3 / python testememoria.py
+#  pgrep -f testememoria.py
+# watch -n 1 "ps -o min_flt,maj_flt -p <PID>
+
 import numpy as np
 import time
 import threading

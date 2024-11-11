@@ -1,3 +1,9 @@
+// cd(caminho)
+// g++ professor.cpp -o memory_test -std=c++11
+// ./memory_test
+// ps aux | grep memory_test
+// watch -n 1 "ps -o min_flt,maj_flt -p <PID>
+
 #include <chrono>
 #include <stdio.h>
 #include <string.h>

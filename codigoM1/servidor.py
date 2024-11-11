@@ -1,3 +1,8 @@
+# cd(caminho)
+# python3 servidor.py
+# pgrep -f servidor.py
+# watch -n 1 "ps -o min_flt,maj_flt -p <PID>
+
 import os
 import threading
 import time
