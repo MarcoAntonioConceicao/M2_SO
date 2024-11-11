@@ -73,10 +73,15 @@ Para rodar os códigos e realizar testes:
 4. Compile e execute o código em C++ para o teste de memória:
  ```bash
  g++ -o memory_test memory_test.cpp -std=c++11 -pthread
+ ./memory_teste
+ ```
+5. Compile e execute o código em C++ fornecido pelo professor:
+ ```bash
+g++ main.cpp -o memory_test -std=c++11
  ./memory_test
  ```
 
-5. Use códigos para analisar o desempenho
+6. Use códigos para analisar o desempenho
  ```bash
  htop
  top
