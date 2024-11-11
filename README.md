@@ -87,6 +87,8 @@ g++ main.cpp -o memory_test -std=c++11
  top
  watch -n 1 "ps -o min_flt,maj_flt -p <PID>
  ```
+### Conclusão
 
+Este projeto fornece uma análise prática do gerenciamento de memória e page faults em sistemas operacionais, utilizando comparações entre linguagens e plataformas para observar as diferenças no desempenho. Essa análise é fundamental para entender o comportamento de sistemas sob carga pesada e a importância da otimização de memória em aplicações de alto desempenho.
 
 
